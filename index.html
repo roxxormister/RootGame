@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="color-scheme" content="dark" />
+  <title>ROOT — SESSION</title>
+  <link rel="icon" href="assets/img/root_icon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="menu" class="screen active">
+    <div class="menu-noise"></div>
+    <div class="menu-version">ROOT / SESSION 2.2</div>
+    <button id="menuSoundHint" class="menu-sound-hint">♪ CLIQUER POUR ACTIVER LA MUSIQUE</button>
+    <div class="menu-actions">
+      <button id="newGameBtn" class="menu-btn primary">JOUER</button>
+      <button id="continueBtn" class="menu-btn">CONTINUER</button>
+      <button id="optionsBtn" class="menu-btn">OPTIONS</button>
+      <button id="creditsBtn" class="menu-btn">CRÉDITS</button>
+      <button id="quitBtn" class="menu-btn danger">QUITTER</button>
+    </div>
+  </div>
+
+  <div id="boot" class="screen hidden">
+    <pre id="bios"></pre>
+    <div id="bootLogo" class="boot-logo hidden">
+      <div class="aster-mark">ASTER</div>
+      <div class="boot-line"><span></span></div>
+      <small>Aster Personal System 2.4</small>
+    </div>
+  </div>
+
+  <div id="computer" class="screen hidden">
+    <div id="desktop">
+      <div id="desktopIcons"></div>
+      <div id="windowsLayer"></div>
+      <div id="desktopToast" class="hidden"></div>
+      <div id="objectiveCard" class="hidden"></div>
+      <div id="taskbar">
+        <button id="startBtn"><b>▣</b> démarrer</button>
+        <div id="taskButtons"></div>
+        <div id="tray"><span id="netLight">●</span><span>🔊</span><span id="clock">22:41</span></div>
+      </div>
+      <div id="startMenu" class="hidden">
+        <div class="start-user"><div class="userpic">A</div><b>alex</b></div>
+        <button data-start="documents">📁 Mes documents</button>
+        <button data-start="settings">⚙ Paramètres</button>
+        <button data-start="save">💾 Sauvegarder</button>
+        <button data-start="menu">↩ Retour au menu</button>
+        <button data-start="shutdown">⏻ Éteindre...</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalLayer" class="hidden"></div>
+  <div id="shockLayer" class="hidden"><div class="shockText"></div></div>
+  <div id="ending" class="screen hidden"></div>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
