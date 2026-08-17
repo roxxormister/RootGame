@@ -12,6 +12,7 @@
     .replace(/rootproject\.local/gi,'pumbleproject.local')
     .replace(/ROOTPROJECT/g,'PUMBLEPROJECT')
     .replace(/RootProject/g,'PumbleProject')
+    .replace(/rootproject/gi,'PumbleProject')
     .replace(/ROOT Project/g,'PumbleProject')
     .replace(/ROOT Fun!/g,'Pumble Fun!')
     .replace(/ROOT FUN/g,'PUMBLE FUN')
